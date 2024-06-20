@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LittleLemonForm</title>
+</head>
+<body>
+    <img src="logo.png" alt="Little Lemon logo">    
+    </img>
+    <form method="post" action>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" Email="user_email" id="user_email"><br>
+        </div>
+
+        <div>
+            <label for="date">Date of Booking</label><br>
+            <input type="date" name="date" id="date"><br>
+        </div>
+        
+        <div>
+            <label for="number">Number of People</label><br>
+            <input type="number" name="quantity" id="quantity" required min="1" required max="8"><br>
+        </div>
+
+        <div>
+            <label for="agree">I agree to the cancellation policy</label><br>
+            <input type="checkbox" name="agree" id="agree"><br>
+            <button type="submit" onclick="alert('Thank you for your reservation!')">Book Now</button><br>
+        </div>
+    </form>
+</body>
+</html>
